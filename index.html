@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Alphabet & Number Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kids Alphabet & Number Games</h1>
+        <button class="game-button" onclick="startAlphabetGame()">
+            <img src="alphabet-icon.png" alt="Alphabet Icon" class="button-icon"> Alphabet Game
+        </button>
+        <button class="game-button" onclick="startNumberGame()">
+            <img src="number-icon.png" alt="Number Icon" class="button-icon"> Number Game
+        </button>
+
+        <div id="game-area"></div>
+
+        <div id="input-area" style="display:none;">
+            <input type="text" id="answer" placeholder="Type your answer here">
+            <button class="check-button" onclick="checkAnswer()">Check</button>
+        </div>
+
+        <div id="result"></div>
+
+        <div id="score-page" style="display:none;">
+            <h2>Your Score</h2>
+            <p id="score-display"></p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+
+        <div id="rank-page" style="display:none;">
+            <h2>Leaderboard</h2>
+            <ol id="leaderboard"></ol>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
